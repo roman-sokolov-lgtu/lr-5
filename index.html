@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вариант 11</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="loading-spinner" class="loading-spinner"></div>
+
+    <header>
+        <h1>
+            <span class="star">
+                <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M19.2 0H12.8V8.27451L6.94904 2.42355L2.42355 6.94902L8.27453 12.8H0V19.2H8.27451L2.42355 25.0509L6.94904 29.5765L12.8 23.7254V32H19.2V23.7254L25.051 29.5765L29.5765 25.051L23.7254 19.2H32V12.8H23.7254L29.5765 6.94902L25.051 2.42354L19.2 8.27451V0Z" fill="#0D1421"/>
+                </svg>
+            </span>
+            Вариант 11
+        </h1>
+    </header>
+    
+    <main>
+        <div class="header-container">
+            <h2>Ваши задачи</h2>
+            <div class="sort-dropdowns">
+                <select id="date-sort">
+                    <option value="default">Сортировка по дате</option>
+                    <option value="earlier">Истекают раньше</option>
+                    <option value="later">Истекают позже</option>
+                </select>
+                <div class="color-dropdown" onclick="toggleColorOptions()">
+                    <span>Сортировка по цвету</span>
+                    <div class="color-options" id="color-options">
+                        <label class="color-checkbox">
+                            <input type="checkbox" value="blue">
+                            <span class="color-box" style="background-color: blue;"></span>
+                        </label>
+                        <label class="color-checkbox">
+                            <input type="checkbox" value="green">
+                            <span class="color-box" style="background-color: green;"></span>
+                        </label>
+                        <label class="color-checkbox">
+                            <input type="checkbox" value="red">
+                            <span class="color-box" style="background-color: red;"></span>
+                        </label>
+                        <label class="color-checkbox">
+                            <input type="checkbox" value="violet">
+                            <span class="color-box" style="background-color: violet;"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tasks-container" id="tasks-container">
+            <div class="task" data-date="2025-07-16">
+                <div class="color-box" style="background-color: blue;"></div>
+                <h3>Название первой задачи</h3>
+                <p>Описание задачи</p>
+                <p><strong>Истекает:</strong> 16 июля 2025 года</p>
+                <p><strong>Ответственный:</strong> Соколов Роман</p>
+            </div>
+            <div class="task" data-date="2025-08-01">
+                <div class="color-box" style="background-color: green;"></div>
+                <h3>Название второй задачи</h3>
+                <p>Описание задачи</p>
+                <p><strong>Истекает:</strong> 1 августа 2025 года</p>
+                <p><strong>Ответственный:</strong> Соколов Роман</p>
+            </div>
+            <div class="task" data-date="2025-09-15">
+                <div class="color-box" style="background-color: red;"></div>
+                <h3>Название третьей задачи</h3>
+                <p>Описание задачи</p>
+                <p><strong>Истекает:</strong> 15 сентября 2025 года</p>
+                <p><strong>Ответственный:</strong> Соколов Роман</p>
+            </div>
+            <div class="task" data-date="2025-11-30">
+                <div class="color-box" style="background-color: violet;"></div>
+                <h3>Название четвертой задачи</h3>
+                <p>Описание задачи</p>
+                <p><strong>Истекает:</strong> 30 ноября 2025 года</p>
+                <p><strong>Ответственный:</strong> Соколов Роман</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© Вариант 11. Соколов Роман, группа ПИ-22-2</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
